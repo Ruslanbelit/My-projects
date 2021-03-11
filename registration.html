@@ -17,24 +17,25 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__contorls">
-                    <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                    <a href="index.html"><img class="header__logo" src="./img/logo.svg" alt="logo" width="44"
+                            height="38"></a>
                     <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
                 </div>
                 <div class="header__contorls">
                     <button class="header__button">
-                        <img src="./img/menu-1.svg" alt="menu" width="32" height="23">
+                        <img src="./img/menu.svg" alt="menu" width="32" height="23">
                     </button>
-                    <a class="header__person-link" href="#"><img src="./img/person.svg" alt="person" width="29"
-                            height="29"></a>
+                    <a class="header__person-link" href="registration.html"><img src="./img/profile.svg" alt="person"
+                            width="29" height="29"></a>
                     <a href="#"><img src="./img/basket.svg" alt="basket" width="32" height="29"></a>
                 </div>
             </div>
         </div>
         <nav class="header__navigation">
-            menu
-            <ul>
+            Menu
+            <ul class="header__navigation-list">
                 <li>
-                    <h2>man</h2>
+                    <h2>Man</h2>
                     <ul>
                         <li><a href="#">link</a></li>
                         <li><a href="#">link</a></li>
@@ -43,7 +44,7 @@
                     </ul>
                 </li>
                 <li>
-                    <h2>woman</h2>
+                    <h2>Woman</h2>
                     <ul>
                         <li><a href="#">link</a></li>
                         <li><a href="#">link</a></li>
@@ -52,7 +53,7 @@
                     </ul>
                 </li>
                 <li>
-                    <h2>kids</h2>
+                    <h2>Kids</h2>
                     <ul>
                         <li><a href="#">link</a></li>
                         <li><a href="#">link</a></li>
@@ -63,32 +64,58 @@
             </ul>
         </nav>
     </header>
-    <h1>registration</h1>
-    <form action="" method="post">
-        <fieldset>
-            <legend>Your Name</legend>
-            <label><input type="text" placeholder="First Name"></label><br>
-            <label class="label" for="username"></label>
-            <input class="input" type="text" id="username" placeholder="Last Name">
-        </fieldset>
-
-        <div>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
+    <section class="heading_registration">
+        <h1 class="heading_registration-title container">Registration</h1>
+    </section>
+    <section class="content-center">
+        <form class="registration_form container" action="" method="post">
+            <fieldset class="input-name">
+                <legend class="header_input">Your Name</legend>
+                <label class="label" for="username">
+                    <input class="input" type="text" id="username" placeholder="First Name">
+                </label>
+                <label class="label" for="username">
+                    <input class="input" type="text" id="username" placeholder="Last Name">
+                </label>
+            </fieldset>
+            <div class="input_radio">
+                <input class="input_radio-label" type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input class="input_radio-label" type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <fieldset class="input-name">
+                <legend class="header_input">Login Details</legend>
+                <label>
+                    <input class="input" type="text" placeholder="Email">
+                </label>
+                <label for="username">
+                    <input class="input" type="text" id="username" placeholder="Password">
+                </label>
+                <p class="registration-send">Please use 8 or more characters, with at least 1 number and a mixture of
+                    uppercase
+                    and lowercase letters</p>
+            </fieldset>
+            <button class="button__registration">
+                join now
+            </button>
+        </form>
+        <div class="registration-info">
+            <h2 class="registration__info-title">LOYALTY HAS ITS PERKS</h2>
+            <p class="registration__info-text">Get in on the loyalty program where you can earn points and unlock
+                serious perks. Starting with these as
+                soon as you join:</p>
+            <ul>
+                <li class="registration__info-item">15% off welcome offer</li>
+                <li class="registration__info-item">Free shipping, returns and exchanges on all orders</li>
+                <li class="registration__info-item">$10 off a purchase on your birthday</li>
+                <li class="registration__info-item">Early access to products</li>
+                <li class="registration__info-item">Exclusive offers & rewards</li>
+            </ul>
         </div>
-        <fieldset>
-            <legend>Login Details</legend>
-            <label><input type="text" placeholder="Email"></label><br>
-            <label class="label" for="username"></label>
-            <input class="input" type="text" id="username" placeholder="Password">
-        </fieldset>
-    </form>
-    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-    <button class="button__registration">
-        join now
-    </button>
+    </section>
+
+
     <footer>
         <div class="footer__information">
             <ul class="footer__information--list">
@@ -111,7 +138,7 @@
             <span class="rights">© 2021 Brand All Rights Reserved.</span>
             <ul class="contacts_list">
                 <li class="contacts_list--item"><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
-                <li class="contacts_list--item"><a href="#"><img src="img/insta.svg" alt="inst"></a></li>
+                <li class="contacts_list--item"><a href="#"><img src="img/instagram.svg" alt="inst"></a></li>
                 <li class="contacts_list--item"><a href="#"><img src="img/pinterest.svg" alt="pinterest"></a></li>
                 <li class="contacts_list--item"><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
             </ul>
