@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Header</title>
 </head>
 
 <body>
@@ -25,55 +23,61 @@
                     <button class="header__button">
                         <img src="./img/menu.svg" alt="menu" width="32" height="23">
                     </button>
+                    <nav class="header__navigation">
+                        <h2 class="header__navigation-menu">MENU</h2>
+                        <ul>
+                            <li>
+                                <h2 class="header__navigation-list">MAN</h2>
+                                <ul class="header__navigation-button">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                    <li><a href="#">Denim</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2 class="header__navigation-list">WOMAN</h2>
+                                <ul class="header__navigation-button">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h2 class="header__navigation-list">KIDS</h2>
+                                <ul class="header__navigation-button">
+                                    <li><a href="#">Accessories</a></li>
+                                    <li><a href="#">Jackets & Coats</a></li>
+                                    <li><a href="#">Polos</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Bags</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
                     <a class="header__person-link" href="registration.html"><img src="./img/profile.svg" alt="person"
                             width="29" height="29"></a>
                     <a href="#"><img src="./img/basket.svg" alt="basket" width="32" height="29"></a>
                 </div>
             </div>
         </div>
-        <nav class="header__navigation">
-            menu
-            <ul class="header__navigation-list">
-                <li>
-                    <h2>man</h2>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>woman</h2>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>kids</h2>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
-        <section class="brand container">
-            <img src="./img/man.jpg" alt="man" width="800" height="765">
-            <div class="brand__title-wrapper">
-                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
-                            class="brand__subtitle-pink">fashion</span></span></h1>
+        <section class="brand">
+            <div class="brand__img-wrapper">
+                <img class="brand__img" src="./img/man.jpg" alt="brand" width="800" height="765">
+            </div>
+            <div class="brand__heading-wrapper">
+                <h1 class="brand__heading">
+                    the brand <span class="brand__subtitle">of
+                        luxerious <span class="brand__subtitle-pink">fashion</span></span>
+                </h1>
             </div>
         </section>
         <section class="offers container">
-            <h2 class="visually-hidden">Offers</h2>
             <ul class="offers__list">
                 <li class="offers__item offers__item--woman">
                     <div class="offer__title-wrapper">
@@ -220,13 +224,15 @@
             </ul>
         </div>
         <div class="footer__pagination">
-            <span class="rights">© 2021 Brand All Rights Reserved.</span>
-            <ul class="contacts_list">
-                <li class="contacts_list--item"><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
-                <li class="contacts_list--item"><a href="#"><img src="img/instagram.svg" alt="inst"></a></li>
-                <li class="contacts_list--item"><a href="#"><img src="img/pinterest.svg" alt="pinterest"></a></li>
-                <li class="contacts_list--item"><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
-            </ul>
+            <div class="footer__pagination container">
+                <span class="rights">© 2021 Brand All Rights Reserved.</span>
+                <ul class="contacts_list">
+                    <li class="contacts_list--item"><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                    <li class="contacts_list--item"><a href="#"><img src="img/instagram.svg" alt="inst"></a></li>
+                    <li class="contacts_list--item"><a href="#"><img src="img/pinterest.svg" alt="pinterest"></a></li>
+                    <li class="contacts_list--item"><a href="#"><img src="img/twitter.svg" alt="twitter"></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
